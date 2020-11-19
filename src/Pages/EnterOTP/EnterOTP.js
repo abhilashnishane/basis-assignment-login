@@ -45,7 +45,8 @@ export default function EnterOTP() {
             // console.log('Phone ' + u.phoneNumber)
             // console.log('Rewards ' + u.rewards)
 
-            history.push('/profile');
+            // history.push('/profile');
+            history.push('/enteremail');
           }
 
         })
