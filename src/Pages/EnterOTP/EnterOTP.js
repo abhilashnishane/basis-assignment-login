@@ -38,7 +38,7 @@ export default function EnterOTP() {
 
           console.log(json);
           if(json.success) {
-            localStorage.setItem("basis_user_profile", json.results.user);
+            localStorage.setItem("basis_user_profile", JSON.stringify(json.results.user));
 
             // let u = json.results.user;
             // console.log(u.firstName, u.lastName)
