@@ -38,15 +38,13 @@ export default function EnterOTP() {
 
           console.log(json);
           if(json.success) {
-            localStorage.setItem("basis_user_profile", JSON.stringify(json.results.user));
-
-            // let u = json.results.user;
-            // console.log(u.firstName, u.lastName)
-            // console.log('Phone ' + u.phoneNumber)
-            // console.log('Rewards ' + u.rewards)
-
-            // history.push('/profile');
-            history.push('/enteremail');
+            if(json.results.isLogin === false) {
+              localStorage.setItem("basis_user_profile", JSON.stringify(json.results.user));
+              history.push('/enteremail');
+            } else if(json.results.isLogin) {
+              localStorage.setItem("basis_user_profile", JSON.stringify(json.results.user));
+              history.push('/profile');
+            }
           }
 
         })

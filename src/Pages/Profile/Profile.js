@@ -45,6 +45,7 @@ export default function Profile() {
         if(json.success) {
           localStorage.removeItem("basis_token");
           localStorage.removeItem("basis_phone");
+          localStorage.removeItem("basis_email");
           localStorage.removeItem("basis_user_profile");
           history.push('/enterphone');
         }
