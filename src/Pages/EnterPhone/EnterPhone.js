@@ -36,6 +36,7 @@ export default function EnterPhone() {
           if(json.success) {
             console.log(json.results.token);
             localStorage.setItem("basis_token", json.results.token);
+            localStorage.setItem("basis_phone", phone);
             history.push('/enterotp');
           }
 
