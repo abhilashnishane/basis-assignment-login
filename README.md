@@ -12,6 +12,12 @@ $ npm i
 $ npm start
 ```
 
+### Deployment
+To deploy on github pages
+```sh
+$ npm run deploy
+```
+
 ### Todos
 - write README file
 - resend otp, resend email 
