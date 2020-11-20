@@ -13,7 +13,7 @@ import Profile from './Pages/Profile/Profile';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/basis-assignment-login">
       <Switch>
         <Route exact path="/enterphone" component={EnterPhone} />
         <Route exact path="/enterotp" component={EnterOTP} />
